@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Opto")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Opto.pretty")(options "")(descr ""))
+  (lib (name "Passives")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Passives.pretty")(options "")(descr ""))
+  (lib (name "Speaker")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Speaker.pretty")(options "")(descr ""))
+  (lib (name "X7")(type "KiCad")(uri "${KIPRJMOD}/Footprints/X7.pretty")(options "")(descr ""))
+)
