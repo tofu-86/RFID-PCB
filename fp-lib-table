@@ -4,4 +4,5 @@
   (lib (name "Passives")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Passives.pretty")(options "")(descr ""))
   (lib (name "Speaker")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Speaker.pretty")(options "")(descr ""))
   (lib (name "X7")(type "KiCad")(uri "${KIPRJMOD}/Footprints/X7.pretty")(options "")(descr ""))
+  (lib (name "indc")(type "KiCad")(uri "${KIPRJMOD}/Footprints/indc.pretty")(options "")(descr ""))
 )
