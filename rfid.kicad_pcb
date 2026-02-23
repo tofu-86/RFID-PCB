@@ -8021,6 +8021,7 @@
 		(property "Reference" "quack"
 			(at 0 0 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "bdae16f9-6c8f-4efb-819c-5259aa41531e")
 			(effects
 				(font
@@ -11014,6 +11015,18 @@
 				(thickness 0.1)
 			)
 			(justify left bottom)
+		)
+	)
+	(gr_text "{dblquote}quack.{dblquote}"
+		(at 71.5 75 90)
+		(layer "B.SilkS")
+		(uuid "357bc49e-5ede-4730-a2aa-c3e989e7c5ce")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(segment
