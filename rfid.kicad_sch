@@ -14,6 +14,113 @@
 		(comment 4 "STUDENT VERSION")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -810,13 +917,12 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Passives:COIL"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
@@ -2803,6 +2909,12 @@
 		(uuid "f6e3b8db-c265-4043-b601-88afa7b8d902")
 	)
 	(junction
+		(at 68.58 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "023b84c1-f24b-4217-9151-0ab68adfcf7e")
+	)
+	(junction
 		(at 77.47 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2921,6 +3033,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e504e11-2898-458c-8a23-e99f08f38087")
+	)
+	(junction
+		(at 58.42 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a58efc61-cfe2-4e6f-8220-ea1cfa105cc3")
 	)
 	(junction
 		(at 146.05 29.21)
@@ -3048,7 +3166,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 53.34) (xy 71.12 53.34)
+			(xy 67.31 53.34) (xy 68.58 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3208,6 +3326,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 53.34) (xy 71.12 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e227e8d-1a7d-4dc5-b438-89ced05d9130")
+	)
+	(wire
+		(pts
 			(xy 77.47 121.92) (xy 77.47 116.84)
 		)
 		(stroke
@@ -3318,7 +3446,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 50.8) (xy 173.99 53.34)
+			(xy 173.99 50.8) (xy 173.99 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3918,6 +4046,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 53.34) (xy 59.69 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df017ee9-88c7-46ed-a8a1-67b1ab0b3f50")
+	)
+	(wire
+		(pts
 			(xy 146.05 41.91) (xy 146.05 53.34)
 		)
 		(stroke
@@ -3988,7 +4126,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 53.34) (xy 59.69 53.34)
+			(xy 57.15 53.34) (xy 58.42 53.34)
 		)
 		(stroke
 			(width 0)
@@ -4529,6 +4667,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 173.99 58.42 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "086a94fe-7ea5-4c81-a2b3-8d33c2b650d3")
+		(property "Reference" "DEMOD1"
+			(at 176.53 59.1819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 176.53 61.7219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 176.53 64.2619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 173.99 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23d58c1d-04de-4422-9ac9-5328874d81a9")
+		)
+		(instances
+			(project ""
+				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
+					(reference "DEMOD1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 226.06 91.44 0)
 		(unit 1)
@@ -4725,6 +4930,136 @@
 			(project "rfid"
 				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 58.42 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1337d0d7-bae5-48a2-9da2-9a88e28d2d19")
+		(property "Reference" "TP1_R"
+			(at 57.1499 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 59.6899 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 48.26 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 58.42 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "686c0fba-3b82-467b-b4a0-d91a8991d183")
+		)
+		(instances
+			(project "rfid"
+				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
+					(reference "TP1_R")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 121.92 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14903352-4b9b-4f72-9c24-fd371d41fc1f")
+		(property "Reference" "GND1"
+			(at 91.44 120.6499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 91.44 123.1899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 37.846 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.36 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07d2edad-2bbc-4a30-adab-7a771abae82d")
+		)
+		(instances
+			(project "rfid"
+				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
+					(reference "GND1")
 					(unit 1)
 				)
 			)
@@ -5831,6 +6166,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 68.58 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b707f0e-b3dd-4e49-bb9f-08c864a9c801")
+		(property "Reference" "TP2_D"
+			(at 67.3099 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 69.8499 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 58.42 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4b644179-021c-4033-9b2e-8fe441a71b08")
+		)
+		(instances
+			(project "rfid"
+				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
+					(reference "TP2_D")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 53.34 53.34 270)
 		(unit 1)
@@ -6546,7 +6946,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Passives:COIL"
 			(at 63.5 53.34 0)
 			(effects
 				(font
@@ -7612,6 +8012,69 @@
 			(project "rfid"
 				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 113.03 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d75f2cee-2706-479a-913e-d8812626a355")
+		(property "Reference" "BUZZER1"
+			(at 109.728 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 109.728 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 91.186 155.448 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 113.03 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fe4c1ca-5aa9-422f-a4dc-e6d78e0ac969")
+		)
+		(instances
+			(project "rfid"
+				(path "/1c19d7c3-e48e-488a-90fb-dff70669a459"
+					(reference "BUZZER1")
 					(unit 1)
 				)
 			)

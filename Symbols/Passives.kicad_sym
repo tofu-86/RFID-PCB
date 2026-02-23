@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "L"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,13 +22,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Passives:COIL"
 			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
@@ -98,5 +97,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )
